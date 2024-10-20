@@ -1,0 +1,177 @@
+/* Section Projet Détails */
+#project-details {
+    padding: 80px 20px;
+    background-color: #151C21;
+    color: #fff;
+    text-align: center;
+}
+
+#project-details h1 {
+    color: #39D1FF;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item p {
+    margin-top: 10px;
+    color: #39D1FF;
+}
+
+/* Bouton retour */
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #39D1FF;
+    color: #151C21;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #33b3e0;
+}
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Couleur du texte en blanc pour le contraste */
+    background-color: #151C21; /* Couleur de fond du body */
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: rgba(255, 255, 255, 0.1); /* Blanc très transparent */
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Ajout du flou */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour plus de profondeur */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Texte blanc pour la navigation */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4; /* Légère modification au survol */
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px;
+    background-color: #151C21; /* Cohérence avec le body */
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 4rem; /* Agrandit les icônes */
+    color: #39D1FF; /* Définit la couleur bleu clair */
+    transition: color 0.3s ease; /* Transition douce sur la couleur */
+}
+
+.social-icons a:hover {
+    color: #00A3E1; /* Couleur au survol légèrement différente */
+}
+.contact-email{
+    font-size: 20px;
+}
+#contact h2{
+    color: #39D1FF;
+    }
+
+/* E-mail */
+.email-info {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.email-info a {
+    color: #39D1FF; /* Couleur de l'email */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,304 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Couleur du texte en blanc pour le contraste */
+    background-color: #151C21; /* Couleur de fond du body */
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: rgba(255, 255, 255, 0.1); /* Blanc très transparent */
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Ajout du flou */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour plus de profondeur */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Texte blanc pour la navigation */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4; /* Légère modification au survol */
+}
+
+/* Section Présentation */
+#about {
+    padding-top: 90px; /* Ajout de padding pour compenser la barre de navigation */
+    background-color: #151C21; /* Même couleur que le body */
+    text-align: center;
+    position: relative;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #39D1FF;
+}
+
+/* Section Parcours Éducatif */
+#education {
+    padding: 50px 20px; /* General padding */
+    background-color: #151C21;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #39D1FF;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-text {
+    flex: 1;
+    text-align: left; /* Aligns text to the left */
+}
+
+.education-text h4 {
+    color: #39D1FF; /* Light blue color for titles */
+    margin-bottom: 10px;
+}
+
+.education-text p {
+    margin-bottom: 20px;
+}
+
+.education-image img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .education-container {
+        flex-direction: row; /* Align text and image side by side on larger screens */
+        align-items: flex-start;
+    }
+
+    .education-text {
+        flex: 1;
+        max-width: 50%; /* Ensures text takes half of the container */
+    }
+
+    .education-image {
+        flex: 1;
+        max-width: 50%; /* Ensures image takes half of the container */
+    }
+
+    .education-image img {
+        width: 100%; /* Makes image responsive */
+        height: auto;
+    }
+}
+
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cercle bleu clair flou */
+.about-decoration {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(39, 222, 232, 0.5);
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+/* Section Projets */
+#projects {
+    padding: 50px;
+    background-color: #151C21; /* Cohérence avec le body */
+}
+
+#projects .project-grid {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#projects .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 14px rgba(39, 222, 232, 0.374);
+    max-width: 300px;
+    color: black;
+    height: 400px;
+}
+
+
+
+#projects .project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#projects .project h3 {
+    margin-top: 15px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px;
+    background-color: #151C21; /* Cohérence avec le body */
+    text-align: center;
+}
+#contact h2{
+color: #39D1FF;
+}
+
+#projects h2{
+    color: #39D1FF;
+}
+
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin: 20px 0;
+}
+
+.contact-email{
+    font-size: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 4rem; /* Agrandit les icônes */
+    color: #39D1FF; /* Définit la couleur bleu clair */
+    transition: color 0.3s ease; /* Transition douce sur la couleur */
+}
+
+.social-icons a:hover {
+    color: #00A3E1; /* Couleur au survol légèrement différente */
+}
+
+
+/* E-mail */
+.email-info {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.email-info a {
+    color: #39D1FF; /* Couleur de l'email */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.project-link {
+    text-decoration: none; /* Retirer le soulignement des liens */
+    color: inherit; /* Garde la couleur du texte du projet */
+    display: block; /* Assure que tout le bloc soit cliquable */
+}
+
+.project-link:hover .project {
+    transform: scale(1.05); /* Petit effet de zoom au survol */
+    transition: transform 0.3s ease;
+}
+/* Section Logiciels maîtrisés */
+#software {
+    
+    padding: 50px 0;
+    text-align: center;
+}
+
+#software h2 {
+    font-size: 2.5rem;
+    color: #39D1FF;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.software-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.software-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 14px rgba(39, 222, 232, 0.374);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    max-width: 150px;
+}
+
+.software-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.software-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.software-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(39, 222, 232, 0.374);
+}
+.education-image{
+    filter: drop-shadow(10px 10px 15px rgba(39, 222, 232, 0.374));
+}
