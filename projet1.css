@@ -175,9 +175,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.image-item video {
-    max-width: 300px; /* Limite la largeur de la vidéo */
-    width: 100%; /* Pour s’adapter au conteneur */
-    border-radius: 10px; /* Conserve le style arrondi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de profondeur */
-}
